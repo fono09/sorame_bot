@@ -3,9 +3,10 @@ package model
 import (
     "strings"
 	"database/sql"
-	"github.com/fono09/sorame_bot/config"
+	"config"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
+    "fmt"
 )
 
 var db *sql.DB
@@ -22,6 +23,7 @@ func createTable() error {
     }
     defer mysql.Close()
 
+    println("dbn:",dbn)
     _, err = mysql.Exec("CREATE DATABASE IF NOT EXISTS ?;", dbn)
     if err != nil {
         return err

@@ -3,8 +3,8 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/fono09/sorame_bot/config"
-	"github.com/fono09/sorame_bot/model"
+	"config"
+	"model"
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
 	"log"
