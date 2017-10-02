@@ -1,0 +1,9 @@
+db:
+  image: mysql:5.7
+  container_name: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: oten10samato3kan
+  ports:
+    - "3306:3306"
+  volumes:
+    - ./my.cnf:/etc/mysql/my.cnf
