@@ -3,7 +3,7 @@ package model
 import (
     "strings"
 	"database/sql"
-	"config"
+	"../config"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
     "fmt"

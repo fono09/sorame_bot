@@ -3,8 +3,8 @@ package main
 import (
 	"errors"
 	"fmt"
-	"config"
-	"model"
+	"./config"
+	"./model"
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
 	"log"
