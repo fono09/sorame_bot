@@ -3,7 +3,11 @@ db:
   container_name: mysql
   environment:
     MYSQL_ROOT_PASSWORD: oten10samato3kan
-  ports:
-    - "3306:3306"
   volumes:
     - ./my.cnf:/etc/mysql/my.cnf
+app:
+    build: .
+    container_name: sorame_bot
+    depends_on:
+        - db
+
