@@ -2,7 +2,7 @@ db:
   image: mysql:5.7
   container_name: mysql
   environment:
-    MYSQL_ROOT_PASSWORD: oten10samato3kan
+    MYSQL_ROOT_PASSWORD: password
   volumes:
     - ./my.cnf:/etc/mysql/my.cnf
 app:
