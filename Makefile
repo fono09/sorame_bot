@@ -1,8 +1,8 @@
 DIRECTORY="github.com/fono09/sorame_bot"
 
 bot:
-	go get -u github.com/golang/dep/cmd/dep
-	dep ensure
+	go get github.com/golang/dep/cmd/dep
+	dep status
 	go build --ldflags '-s -w -linkmode external -extldflags -static' -v -o bot bot.go
 
 build:

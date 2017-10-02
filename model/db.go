@@ -12,13 +12,17 @@ var db *sql.DB
 var gdb *gorm.DB
 
 func createTable() error {
-    mysql, err := sql.Open("mysql", strings.Split(config.DB, "/")[0] + "/")
+    sdsn := strings.Split(config.DB, "/")
+    dsn := sdsn[0] + "/"
+    dbn := sdsn[1]
+
+    mysql, err := sql.Open("mysql", dsn)
     if err != nil {
         return err
     }
     defer mysql.Close()
 
-    _, err = mysql.Exec("CREATE DATABASE IF NOT EXISTS ?;", strings.Split(config.DB, "/")[1])
+    _, err = mysql.Exec("CREATE DATABASE IF NOT EXISTS ?;", dbn)
     if err != nil {
         return err
     }
