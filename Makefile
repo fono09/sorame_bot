@@ -5,7 +5,7 @@ dep:
 	go get github.com/golang/dep/cmd/dep
 
 bot: dep_status
-	go build --ldflags '-s -w -linkmode external -extldflags -static' -v -o bot bot.go
+	go build -v -o bot bot.go
 
 dep_status: dep
 	dep status

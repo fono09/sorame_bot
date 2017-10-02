@@ -1,21 +1,22 @@
 version: '2'
 services:
     db:
-      image: mysql:5.7
-      container_name: mysql
-      environment:
-        MYSQL_ROOT_PASSWORD: password
-      volumes:
-        - ./my.cnf:/etc/mysql/my.cnf
-      restart: always
-      expose:
-          - 3306
-      volumes:
-          - ./mysql_data:/var/lib/mysql
+        image: mysql:5.7
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: sorame_bot
+        volumes:
+            - ./my.cnf:/etc/mysql/my.cnf
+            - /var/lib/mysql
+        restart: always
+        expose:
+            - "3306"
     web:
-        build: .
-        container_name: sorame_bot
+        image: ubuntu:16.04
+        volumes :
+            - ./:/bot
         depends_on:
             - db
+        working_dir: /bot
+        command: ./bot
         restart: always
-
