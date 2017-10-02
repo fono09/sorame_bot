@@ -18,7 +18,7 @@ func createTable() error {
     }
     defer mysql.Close()
 
-    _, err = mysql.Exec("CREATE DATABASE IF NOT EXISTS ?", strings.Split(config.DB, "/")[1])
+    _, err = mysql.Exec("CREATE DATABASE IF NOT EXISTS ?;", strings.Split(config.DB, "/")[1])
     if err != nil {
         return err
     }
