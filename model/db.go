@@ -11,7 +11,7 @@ import (
 var db *sql.DB
 var gdb *gorm.DB
 
-func createTable(){
+func createTable() error {
     mysql, err := sql.Open("mysql", strings.Split(config.DB, "/")[0])
     if err != nil {
         return err
