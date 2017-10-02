@@ -1,0 +1,82 @@
+{
+	"ImportPath": "github.com/fono09/sorame_bot",
+	"GoVersion": "go1.9",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/cenkalti/backoff",
+			"Comment": "v1.0.0-23-g61153c7",
+			"Rev": "61153c768f31ee5f130071d08fc82b85208528de"
+		},
+		{
+			"ImportPath": "github.com/dghubble/go-twitter/twitter",
+			"Rev": "f74be7f0f20b142558537ca43852457f7c52e051"
+		},
+		{
+			"ImportPath": "github.com/dghubble/oauth1",
+			"Comment": "v0.4.0-16-g7d51c10",
+			"Rev": "7d51c10e15ca32917b32ce43f6e25840d6951db4"
+		},
+		{
+			"ImportPath": "github.com/dghubble/sling",
+			"Comment": "v1.1.0-6-g80ec33c",
+			"Rev": "80ec33c6152a53edb5545864ca37567b506c4ca5"
+		},
+		{
+			"ImportPath": "github.com/go-sql-driver/mysql",
+			"Comment": "v1.2-194-g7ebe0a5",
+			"Rev": "7ebe0a500653eeb1859664bed5e48dec1e164e73"
+		},
+		{
+			"ImportPath": "github.com/google/go-querystring/query",
+			"Rev": "53e6ce116135b80d037921a7fdd5138cf32d7a8a"
+		},
+		{
+			"ImportPath": "github.com/ikawaha/kagome/internal/da",
+			"Comment": "v1.6.2",
+			"Rev": "d863ec08269a460af8b01d3e94f1c7cdc0681f40"
+		},
+		{
+			"ImportPath": "github.com/ikawaha/kagome/internal/dic",
+			"Comment": "v1.6.2",
+			"Rev": "d863ec08269a460af8b01d3e94f1c7cdc0681f40"
+		},
+		{
+			"ImportPath": "github.com/ikawaha/kagome/internal/dic/data",
+			"Comment": "v1.6.2",
+			"Rev": "d863ec08269a460af8b01d3e94f1c7cdc0681f40"
+		},
+		{
+			"ImportPath": "github.com/ikawaha/kagome/internal/lattice",
+			"Comment": "v1.6.2",
+			"Rev": "d863ec08269a460af8b01d3e94f1c7cdc0681f40"
+		},
+		{
+			"ImportPath": "github.com/ikawaha/kagome/tokenizer",
+			"Comment": "v1.6.2",
+			"Rev": "d863ec08269a460af8b01d3e94f1c7cdc0681f40"
+		},
+		{
+			"ImportPath": "github.com/jinzhu/gorm",
+			"Comment": "v1.0-168-gc3bb6aa",
+			"Rev": "c3bb6aaa828867eec72dd8571d111e442688f85f"
+		},
+		{
+			"ImportPath": "github.com/jinzhu/gorm/dialects/mysql",
+			"Comment": "v1.0-168-gc3bb6aa",
+			"Rev": "c3bb6aaa828867eec72dd8571d111e442688f85f"
+		},
+		{
+			"ImportPath": "github.com/jinzhu/inflection",
+			"Rev": "1c35d901db3da928c72a72d8458480cc9ade058f"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "c764672d0ee39ffd83cfcb375804d3181302b62b"
+		},
+		{
+			"ImportPath": "gopkg.in/yaml.v2",
+			"Rev": "53feefa2559fb8dfa8d81baad31be332c97d6c77"
+		}
+	]
+}
