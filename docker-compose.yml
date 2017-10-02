@@ -8,6 +8,10 @@ services:
       volumes:
         - ./my.cnf:/etc/mysql/my.cnf
       restart: always
+      expose:
+          - 3306
+      volumes:
+          - ./mysql_data:/var/lib/mysql
     web:
         build: .
         container_name: sorame_bot

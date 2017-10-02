@@ -2,3 +2,4 @@ bot
 config.yml
 vendor/
 Gopkg.lock
+mysql_data/

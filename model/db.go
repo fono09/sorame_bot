@@ -17,14 +17,14 @@ func createTable() error {
     dsn := sdsn[0] + "/"
     dbn := sdsn[1]
 
-    mysql, err := sql.Open("mysql", dsn)
+    ms, err := sql.Open("mysql", dsn)
     if err != nil {
         return err
     }
-    defer mysql.Close()
+    defer ms.Close()
 
     fmt.Println("dbn:",dbn)
-    _, err = mysql.Query("CREATE DATABASE IF NOT EXISTS ?;", dbn)
+    _, err = ms.Exec("CREATE DATABASE IF NOT EXISTS ?;", dbn)
     if err != nil {
         return err
     }
