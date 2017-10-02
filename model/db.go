@@ -23,8 +23,8 @@ func createTable() error {
     }
     defer mysql.Close()
 
-    println("dbn:",dbn)
-    _, err = mysql.Exec("CREATE DATABASE IF NOT EXISTS ?;", dbn)
+    fmt.Println("dbn:",dbn)
+    _, err = mysql.Query("CREATE DATABASE IF NOT EXISTS ?;", dbn)
     if err != nil {
         return err
     }
