@@ -2,7 +2,7 @@ package model
 
 import (
 	"database/sql"
-	"github.com/VG-Tech-Dojo/treasure2017/mid/fono09/sorame_bot/config"
+	"github.com/fono09/sorame_bot/config"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 )
