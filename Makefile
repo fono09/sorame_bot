@@ -7,3 +7,4 @@ bot:
 
 build:
 	docker run --rm -v ${PWD}:/go/src/${DIRECTORY} -w /go/src/${DIRECTORY} golang:1.9 make bot
+
