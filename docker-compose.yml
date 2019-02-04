@@ -9,8 +9,6 @@ services:
             - ./my.cnf:/etc/mysql/my.cnf
             - /var/lib/mysql
         restart: always
-        expose:
-            - "3306"
     web:
         image: ubuntu:16.04
         volumes :
